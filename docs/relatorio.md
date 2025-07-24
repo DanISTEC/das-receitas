@@ -3,7 +3,7 @@
 ## Integrantes do Grupo
 - Nome do projeto:
 - Integrantes: Daniel Martins, Guilherme Marinho e Joel Cugilana.
-- Repositório: [https://github.com/DanISTEC/das-receitas/](DanISTEC/das-receitas/)
+- Repositório: [https://github.com/DanISTEC/das-receitas/](../das-receitas/)
 
 ## Branches Criadas
 - Descreva as branches criadas e o objetivo de cada uma.

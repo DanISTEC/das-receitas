@@ -26,7 +26,7 @@ const recipes = [
     image: "./assets/recipes/chocolate-chip-cookies.jpg",
     prepTime: "15min",
     cookTime: "12min",
-    tags: ["breakfast", "cookies", "chocolate", "snack"]
+    tags: ["snack", "chocolate", "cookies"]
   },
   {
     id: 2,
@@ -66,7 +66,7 @@ const recipes = [
     image: "./assets/recipes/mango-lime-lassi-bircher.jpg",
     prepTime: "5min",
     cookTime: "5min",
-    tags: ["breakfast", "mango", "vegetarian"]
+    tags: ["breakfast", "fruit", "vegetarian"]
   }
 ]
 

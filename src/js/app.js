@@ -24,33 +24,41 @@ const recipes = [
     id: 1,
     title: "Carne Asada",
     image: "./assets/recipes/recipe-1.jpeg",
-    prepTime: "15min",
-    cookTime: "5min",
+    prepTime: "30min",
+    cookTime: "15min",
     tags: ["beef", "dinner"]
   },
   {
     id: 2,
     title: "Greek Ribs",
     image: "./assets/recipes/recipe-2.jpeg",
-    prepTime: "15min",
-    cookTime: "5min",
+    prepTime: "20min",
+    cookTime: "2h",
     tags: ["beef", "dinner"]
   },
   {
     id: 3,
     title: "Vegetable Soup",
     image: "./assets/recipes/recipe-3.jpeg",
-    prepTime: "15min",
-    cookTime: "5min",
+    prepTime: "25min",
+    cookTime: "45min",
     tags: ["carrots", "dinner", "vegetarian"]
   },
   {
     id: 4,
     title: "Banana Pancakes",
     image: "./assets/recipes/recipe-4.jpeg",
-    prepTime: "15min",
-    cookTime: "5min",
+    prepTime: "10min",
+    cookTime: "20min",
     tags: ["breakfast", "pancakes"]
+  },
+  {
+    id: 5,
+    title: "Chocolate Chip Cookies",
+    image: "./assets/recipes/chocolate-chip-cookies.jpg",
+    prepTime: "15min",
+    cookTime: "12min",
+    tags: ["breakfast", "cookies", "chocolate", "snack"]
   }
 ]
 
@@ -74,6 +82,8 @@ function renderRecipes(recipesToRender) {
       recipeUrl = 'recipes/vegetable-soup.html'
     } else if (recipe.title === 'Banana Pancakes') {
       recipeUrl = 'recipes/banana-pancakes.html'
+    } else if (recipe.title === 'Chocolate Chip Cookies') {
+      recipeUrl = 'recipes/chocolate-chip-cookies.html'
     }
     
     return `
@@ -84,7 +94,7 @@ function renderRecipes(recipesToRender) {
           alt="${recipe.title}"
         />
         <h5>${recipe.title}</h5>
-        <p>Prep : ${recipe.prepTime} | Cook : ${recipe.cookTime}</p>
+        <p>Prep: ${recipe.prepTime} | Cook: ${recipe.cookTime}</p>
       </a>
     `
   }).join('')

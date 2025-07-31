@@ -64,17 +64,30 @@ function renderRecipes(recipesToRender) {
   const recipesList = document.querySelector('.recipes-list')
   if (!recipesList) return
 
-  recipesList.innerHTML = recipesToRender.map(recipe => `
-    <a href="recipes/carne-asada.html" class="recipe">
-      <img
-        src="${recipe.image}"
-        class="img recipe-img"
-        alt="${recipe.title}"
-      />
-      <h5>${recipe.title}</h5>
-      <p>Prep : ${recipe.prepTime} | Cook : ${recipe.cookTime}</p>
-    </a>
-  `).join('')
+  recipesList.innerHTML = recipesToRender.map(recipe => {
+    let recipeUrl = ''
+    if (recipe.title === 'Carne Asada') {
+      recipeUrl = 'recipes/carne-asada.html'
+    } else if (recipe.title === 'Greek Ribs') {
+      recipeUrl = 'recipes/greek-ribs.html'
+    } else if (recipe.title === 'Vegetable Soup') {
+      recipeUrl = 'recipes/vegetable-soup.html'
+    } else if (recipe.title === 'Banana Pancakes') {
+      recipeUrl = 'recipes/banana-pancakes.html'
+    }
+    
+    return `
+      <a href="${recipeUrl}" class="recipe">
+        <img
+          src="${recipe.image}"
+          class="img recipe-img"
+          alt="${recipe.title}"
+        />
+        <h5>${recipe.title}</h5>
+        <p>Prep : ${recipe.prepTime} | Cook : ${recipe.cookTime}</p>
+      </a>
+    `
+  }).join('')
 }
 
 // Function to update tag counts

@@ -14,7 +14,11 @@
 - Print ou link do gráfico de contribuições.
 
 ## Issues Criadas
-Liste as issues criadas e quem ficou responsável por cada uma.
+Issue 1 - "Carne Asada tags not properly redirecting User"
+    - Completada por Guilherme Marinho
+
+Issue 2 - "Tags-container is not updated properly"
+    - Completada por Daniel Martins
 
 ## Pull Requests
 Descreva o processo de revisão e merges realizados.
@@ -23,10 +27,23 @@ Descreva o processo de revisão e merges realizados.
 Explique se houve conflitos e como foram resolvidos.
 
 ## Dificuldades Enfrentadas
-Dúvidas ou problemas que surgiram.
+- Tempo para fazer o Projeto devido à carga de trabalhos nestas últimas duas semanas.
+- Problemas de comunicação com o GitHub
 
 ## Principais Comandos Git Utilizados
-Liste e comente comandos importantes usados no projeto.
+- git init
+- git clone
+- git add .
+- git status
+- git push
+- git branch
+- git diff
+- git merge
+- git pull
+- git checkout
+- git reset
+- git commit
+- git commit -m
 
 ## Conclusão
 Aprendizados principais do grupo com a atividade.

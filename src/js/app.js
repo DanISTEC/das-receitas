@@ -22,6 +22,14 @@ date.textContent = currentYear
 const recipes = [
   {
     id: 1,
+    title: "Chocolate Chip Cookies",
+    image: "./assets/recipes/chocolate-chip-cookies.jpg",
+    prepTime: "15min",
+    cookTime: "12min",
+    tags: ["breakfast", "cookies", "chocolate", "snack"]
+  },
+  {
+    id: 2,
     title: "Carne Asada",
     image: "./assets/recipes/recipe-1.jpeg",
     prepTime: "30min",
@@ -29,7 +37,7 @@ const recipes = [
     tags: ["beef", "dinner"]
   },
   {
-    id: 2,
+    id: 3,
     title: "Greek Ribs",
     image: "./assets/recipes/recipe-2.jpeg",
     prepTime: "20min",
@@ -37,7 +45,7 @@ const recipes = [
     tags: ["beef", "dinner"]
   },
   {
-    id: 3,
+    id: 4,
     title: "Vegetable Soup",
     image: "./assets/recipes/recipe-3.jpeg",
     prepTime: "25min",
@@ -45,7 +53,7 @@ const recipes = [
     tags: ["carrots", "dinner", "vegetarian"]
   },
   {
-    id: 4,
+    id: 5,
     title: "Banana Pancakes",
     image: "./assets/recipes/recipe-4.jpeg",
     prepTime: "10min",
@@ -53,12 +61,12 @@ const recipes = [
     tags: ["breakfast", "pancakes"]
   },
   {
-    id: 5,
-    title: "Chocolate Chip Cookies",
-    image: "./assets/recipes/chocolate-chip-cookies.jpg",
-    prepTime: "15min",
-    cookTime: "12min",
-    tags: ["breakfast", "cookies", "chocolate", "snack"]
+    id: 6,
+    title: "Mango Lassi Bircher",
+    image: "./assets/recipes/mango-lime-lassi-bircher.jpg",
+    prepTime: "5min",
+    cookTime: "5min",
+    tags: ["breakfast", "mango", "vegetarian"]
   }
 ]
 
@@ -84,6 +92,8 @@ function renderRecipes(recipesToRender) {
       recipeUrl = 'recipes/banana-pancakes.html'
     } else if (recipe.title === 'Chocolate Chip Cookies') {
       recipeUrl = 'recipes/chocolate-chip-cookies.html'
+    } else if (recipe.title === 'Mango Lassi Bircher') {
+      recipeUrl = 'recipes/mango-lassi-bircher.html'
     }
     
     return `

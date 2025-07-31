@@ -65,7 +65,7 @@ function renderRecipes(recipesToRender) {
   if (!recipesList) return
 
   recipesList.innerHTML = recipesToRender.map(recipe => `
-    <a href="single-recipe.html" class="recipe">
+    <a href="recipes/carne-asada.html" class="recipe">
       <img
         src="${recipe.image}"
         class="img recipe-img"

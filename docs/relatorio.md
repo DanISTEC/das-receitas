@@ -1,7 +1,7 @@
 # Relatório Final - Página Colaborativa de Receitas
 
 ## Integrantes do Grupo
-- Nome do projeto:
+- Nome do projeto: ReceitasDSB
 - Integrantes: Afonso Almeida, Daniel Martins, Guilherme Marinho e João Paiva.
 - Repositório: [DanISTEC/das-receitas/](https://github.com/DanISTEC/das-receitas/)
 

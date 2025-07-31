@@ -58,7 +58,7 @@ const recipes = [
     image: "./assets/recipes/chocolate-chip-cookies.jpg",
     prepTime: "15min",
     cookTime: "12min",
-    tags: ["breakfast", "cookies"]
+    tags: ["breakfast", "cookies", "chocolate", "snack"]
   }
 ]
 
